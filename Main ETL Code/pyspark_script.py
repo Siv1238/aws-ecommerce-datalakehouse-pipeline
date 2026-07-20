@@ -4,7 +4,7 @@ from pyspark.sql.functions import broadcast, col, row_number, rank, dense_rank
 from pyspark.sql.window import Window
 
 # 1. Initialize Spark Session
-spark = SparkSession.builder.appName("SeniorDataEngineerETL").getOrCreate()
+spark = SparkSession.builder.appName("RetailPipelineETL").getOrCreate()
 
 # 2. Read Data from S3 Raw Folders
 orders_df = spark.read.option("header", "true").option("inferSchema", "true").csv("s3://ecommerce-analytics-datalake-143/raw/orders/")
