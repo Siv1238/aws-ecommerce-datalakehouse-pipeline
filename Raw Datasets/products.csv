@@ -1,0 +1,76 @@
+product_id,product_name,category,price
+101,Laptop Pro,Electronics,75000.00
+102,Smartphone X,Electronics,45000.00
+103,Wireless Mouse,Electronics,1500.00
+104,Gaming Keyboard,Electronics,3500.00
+105,LED Monitor,Electronics,12000.00
+106,Smart TV 55,Electronics,55000.00
+107,Bluetooth Speaker,Electronics,2500.00
+108,Headphones,Electronics,1800.00
+109,Power Bank,Electronics,1200.00
+110,Tablet Mini,Electronics,25000.00
+111,Smart Watch,Electronics,4000.00
+112,DSLR Camera,Electronics,60000.00
+113,Tripod Stand,Electronics,1000.00
+114,Router,Electronics,2000.00
+115,External HDD 1TB,Electronics,4500.00
+116,Mens T-Shirt,Clothing,500.00
+117,Womens Top,Clothing,600.00
+118,Denim Jeans,Clothing,1500.00
+119,Formal Shirt,Clothing,1200.00
+120,Casual Trousers,Clothing,1400.00
+121,Winter Jacket,Clothing,3500.00
+122,Leather Belt,Clothing,800.00
+123,Cotton Socks 3-Pack,Clothing,300.00
+124,Sports Shoes,Clothing,2500.00
+125,Formal Shoes,Clothing,3000.00
+126,Silk Saree,Clothing,5000.00
+127,Cotton Kurta,Clothing,900.00
+128,Track Pants,Clothing,700.00
+129,Woolen Sweater,Clothing,1800.00
+130,Kids Frock,Clothing,650.00
+131,Blender,Home,2500.00
+132,Microwave Oven,Home,8500.00
+133,Vacuum Cleaner,Home,6000.00
+134,Water Purifier,Home,11000.00
+135,Induction Cooktop,Home,3000.00
+136,Coffee Maker,Home,2200.00
+137,Toaster,Home,1200.00
+138,Ceiling Fan,Home,1800.00
+139,Table Lamp,Home,800.00
+140,Iron Box,Home,900.00
+141,Dinner Set,Home,3500.00
+142,Non-Stick Pan,Home,1100.00
+143,Knife Set,Home,600.00
+144,Bedsheet Double,Home,1000.00
+145,Wall Clock,Home,500.00
+146,Yoga Mat,Sports,800.00
+147,Dumbbells 5kg,Sports,1500.00
+148,Cricket Bat,Sports,2500.00
+149,Football,Sports,900.00
+150,Tennis Racket,Sports,3200.00
+151,Badminton Set,Sports,1200.00
+152,Swimming Goggles,Sports,400.00
+153,Cycling Helmet,Sports,1100.00
+154,Protein Shaker,Sports,300.00
+155,Skipping Rope,Sports,200.00
+156,Resistance Bands,Sports,600.00
+157,Treadmill,Sports,25000.00
+158,Punching Bag,Sports,3000.00
+159,Gym Gloves,Sports,450.00
+160,Basketball,Sports,1000.00
+161,Face Wash,Beauty,250.00
+162,Moisturizer,Beauty,400.00
+163,Sunscreen SPF 50,Beauty,550.00
+164,Shampoo 500ml,Beauty,450.00
+165,Conditioner 250ml,Beauty,300.00
+166,Hair Oil,Beauty,200.00
+167,Lipstick,Beauty,600.00
+168,Eyeliner,Beauty,350.00
+169,Nail Polish,Beauty,150.00
+170,Perfume 100ml,Beauty,1200.00
+171,Deodorant,Beauty,250.00
+172,Shaving Cream,Beauty,180.00
+173,Razor 5-Pack,Beauty,300.00
+174,Body Lotion,Beauty,450.00
+175,Face Scrub,Beauty,320.00

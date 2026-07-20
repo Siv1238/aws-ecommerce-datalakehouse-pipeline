@@ -1,0 +1,39 @@
+============================================================
+              END-TO-END DATA LAKEHOUSE FLOW
+============================================================
+
+Step 1: STORAGE (AWS S3)
+------------------------
+* Bucket Name: ecommerce-analytics-datalake-143
+* Folders Created:
+  - raw/orders/     (Uploaded orders.csv - 85 records)
+  - raw/products/   (Uploaded products.csv - 75 records)
+  - processed/      (Destination for optimized output)
+  - athena-results/ (For storing Athena query query execution logs)
+
+Step 2: COMPUTE & TRANSFORMATIONS (AWS Glue ETL Job)
+----------------------------------------------------
+* Job Name: Ecommerce_ETL_Job
+* Engine: PySpark (Spark 3.x)
+* Transformations Executed in Code:
+  1. Read: Loaded CSVs from S3 raw folders with schema inference.
+  2. Narrow Transformation: Filtered out CANCELLED orders (`filter()`).
+  3. Partition Tuning: Repartitioned data based on product_id (`repartition(4, "product_id")`).
+  4. Wide Transformation & Broadcast Join: Joined orders with small products table using `broadcast()`.
+  5. Spark SQL & CTE: Created temporary view and ran CTE (`WITH SalesCTE AS ...`).
+  6. Window Functions: Computed `ROW_NUMBER()`, `RANK()`, and `DENSE_RANK()` partitioned by category.
+  7. Coalesce & Write: Reduced partitions to 1 (`coalesce(1)`) and saved as `.parquet` to S3 processed folder.
+
+Step 3: METADATA & CATALOGING (AWS Glue Crawler)
+-----------------------------------------------
+* Crawler Name: ecommerce_crawler
+* Source: s3://ecommerce-analytics-datalake-143/processed/
+* Target Database: ecommerce_db
+* Action: Scanned parquet files and automatically created schema/table metadata in Data Catalog.
+
+Step 4: CONSUMPTION & ANALYTICS (Amazon Athena)
+-----------------------------------------------
+* Database: ecommerce_db
+* Table: processed
+* Actions: Executed Serverless Standard SQL queries to validate window functions, aggregate revenue, and generate business insights.
+============================================================
